@@ -1,0 +1,14 @@
+{
+  "name": "kafka-nestjs-k8s",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create-service": "node create-service.js",
+    "add-helm": "node add-helm.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
