@@ -3,7 +3,7 @@
 This project is designed to help users learn Kafka by installing and configuring it using Helm and deploying it on a Kubernetes cluster. The repository contains various Helm charts and templates for deploying Kafka and associated services like Envoy Proxy to connect to product and order services.
 
 ```mermaid
-graph LR
+graph LR;
     A[envoy-proxy] -- /order --> C[order-service]
     A[envoy-proxy] -- /product --> D[product-service]
     C[order-service] -- Produce --> B[Kafka]
@@ -128,7 +128,7 @@ export class KafkaProducerService {
 }
 ```
 
-
+#### kafka-producer.service.ts
 ```typescript
 import { Injectable, OnModuleInit, Logger } from '@nestjs/common';
 import { kafka } from '../config/kafka.config';
