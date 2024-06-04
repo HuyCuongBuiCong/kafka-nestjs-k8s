@@ -4,13 +4,13 @@ This project is designed to help users learn Kafka by installing and configuring
 
 ```mermaid
 graph LR;
-    A[envoy-proxy] -- /order --> C[order-service]
-    A[envoy-proxy] -- /product --> D[product-service]
-    C[order-service] -- Produce --> B[Kafka]
-    D[product-service] -- Produce --> B[Kafka]
+A[envoy-proxy] -- /order --> C[order-service]
+A[envoy-proxy] -- /product --> D[product-service]
+C[order-service] -- Produce --> B[<div style="height: 100px;">Kafka</div>]
+D[product-service] -- Produce --> B
+C[order-service] -- Consume --> B
+D[product-service] -- Consume --> B
 
-    C[order-service] -- Consume --> B[Kafka]
-    D[product-service] -- Consume --> B[Kafka]
 ```
 
 
