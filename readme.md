@@ -53,7 +53,7 @@ Test the Kafka producer by sending a message:
 
 Port forward the envoy-proxy service:
 ```bash
-kubectl port-forward svc/envoy-proxy 3000:1000
+kubectl port-forward svc/envoy-proxy 3000:10000
 ```
 
 Send a GET message to the order service:
